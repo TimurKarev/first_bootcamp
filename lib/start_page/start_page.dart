@@ -19,12 +19,19 @@ class StartPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Главная"),
+        backgroundColor: Theme.of(context).primaryColor,
+        title: Padding(
+          padding: const EdgeInsets.only(left: 40.0),
+          child: Text(
+            "Главная",
+            style: Theme.of(context).textTheme.headline1,
+          ),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(
           horizontal: 8.0,
-          vertical: 16.0,
+          vertical: 14.0,
         ),
         child: ListView.builder(
           itemCount: titles.length,
