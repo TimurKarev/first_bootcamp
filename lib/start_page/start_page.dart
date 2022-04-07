@@ -6,7 +6,7 @@ import 'package:first_bootcamp/start_page/widgets/start_page_list_tile.dart';
 import 'package:flutter/material.dart';
 
 class StartPage extends StatelessWidget {
-  static const titles = [
+  static const _titles = [
     "4 квадрата",
     "Цветной список",
     "Codelab",
@@ -34,9 +34,9 @@ class StartPage extends StatelessWidget {
           vertical: 14.0,
         ),
         child: ListView.builder(
-          itemCount: titles.length,
+          itemCount: _titles.length,
           itemBuilder: (context, index) => StartPageListTile(
-            title: titles[index],
+            title: _titles[index],
             onTap: () => _onTileTap(context, index),
           ),
         ),
@@ -44,7 +44,7 @@ class StartPage extends StatelessWidget {
     );
   }
 
-  _onTileTap(BuildContext context, int index) {
+  void _onTileTap(BuildContext context, int index) {
     if (index == 0) {
       Navigator.push(context,
           MaterialPageRoute(builder: (context) => const SquaresPage()));

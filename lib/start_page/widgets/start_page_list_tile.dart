@@ -43,30 +43,4 @@ class StartPageListTile extends StatelessWidget {
       ),
     );
   }
-
-  // @override
-  // Widget build(BuildContext context) {
-  //   return Padding(
-  //     padding: const EdgeInsets.all(8.0),
-  //     child: ListTile(
-  //       tileColor: Theme.of(context).primaryColor,
-  //       iconColor: Colors.black,
-  //       shape: const RoundedRectangleBorder(
-  //         borderRadius: BorderRadius.all(
-  //           Radius.circular(6.0),
-  //         ),
-  //       ),
-  //       contentPadding: const EdgeInsets.symmetric(
-  //         horizontal: 21.0,
-  //         vertical: 0.0,
-  //       ),
-  //       title: Text(
-  //         title,
-  //         style: Theme.of(context).textTheme.headline2,
-  //       ),
-  //       trailing: const Icon(Icons.arrow_forward),
-  //       onTap: onTap,
-  //     ),
-  //   );
-  // }
 }
