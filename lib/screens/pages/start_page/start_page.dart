@@ -1,8 +1,8 @@
-import 'package:first_bootcamp/async_request/async_request.dart';
-import 'package:first_bootcamp/codelab/codelab_page.dart';
-import 'package:first_bootcamp/colored_list/colored_list_page.dart';
-import 'package:first_bootcamp/squares/squares_page.dart';
-import 'package:first_bootcamp/start_page/widgets/start_page_list_tile.dart';
+import 'package:first_bootcamp/screens/pages/async_request/async_request.dart';
+import 'package:first_bootcamp/screens/pages/codelab/codelab_page.dart';
+import 'package:first_bootcamp/screens/pages/colored_list/colored_list_page.dart';
+import 'package:first_bootcamp/screens/pages/squares/squares_page.dart';
+import 'package:first_bootcamp/screens/pages/start_page/widgets/start_page_list_tile.dart';
 import 'package:flutter/material.dart';
 
 class StartPage extends StatelessWidget {

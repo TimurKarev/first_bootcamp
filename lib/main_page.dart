@@ -1,4 +1,4 @@
-import 'package:first_bootcamp/start_page/start_page.dart';
+import 'package:first_bootcamp/screens/pages/start_page/start_page.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatelessWidget {
