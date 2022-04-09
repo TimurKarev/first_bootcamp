@@ -1,3 +1,5 @@
+import 'package:first_bootcamp/theme/colors_app.dart';
+import 'package:first_bootcamp/theme/text_styles_app.dart';
 import 'package:flutter/material.dart';
 
 class StartPageListTile extends StatelessWidget {
@@ -17,9 +19,9 @@ class StartPageListTile extends StatelessWidget {
       child: InkWell(
         onTap: onTap,
         child: Container(
-          decoration: BoxDecoration(
-            color: Theme.of(context).primaryColor,
-            borderRadius: const BorderRadius.all(
+          decoration: const BoxDecoration(
+            color: ColorsApp.primeBlue,
+            borderRadius: BorderRadius.all(
               Radius.circular(6.0),
             ),
           ),
@@ -33,7 +35,8 @@ class StartPageListTile extends StatelessWidget {
               children: [
                 Text(
                   title,
-                  style: Theme.of(context).textTheme.headline2,
+                  style:
+                      TextStylesApp.normalTextStyle.andColor(ColorsApp.black),
                 ),
                 const Icon(Icons.arrow_forward),
               ],

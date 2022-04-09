@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ColoredListPage extends StatelessWidget {
-  const ColoredListPage({Key? key}) : super(key: key);
+class CodelabPage extends StatelessWidget {
+  const CodelabPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Цветной лист"),
+        title: const Text("Codelab"),
       ),
     );
   }

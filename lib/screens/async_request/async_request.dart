@@ -7,7 +7,7 @@ class AsyncRequestPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Асинхронный запрос"),
+        title: const Text("Асинхронный запрос"),
       ),
     );
   }
