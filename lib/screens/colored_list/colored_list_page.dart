@@ -1,3 +1,4 @@
+import 'package:first_bootcamp/assets/strings/strings_app.dart';
 import 'package:flutter/material.dart';
 
 class ColoredListPage extends StatelessWidget {
@@ -7,7 +8,7 @@ class ColoredListPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Цветной лист"),
+        title: const Text(StringsApp.mainScreenTaskItemSecondText),
       ),
     );
   }

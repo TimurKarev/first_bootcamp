@@ -1,3 +1,4 @@
+import 'package:first_bootcamp/assets/strings/strings_app.dart';
 import 'package:flutter/material.dart';
 
 class CodelabPage extends StatelessWidget {
@@ -7,7 +8,7 @@ class CodelabPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Codelab"),
+        title: const Text(StringsApp.mainScreenTaskItemThirdText),
       ),
     );
   }
