@@ -1,6 +1,7 @@
 import 'package:first_bootcamp/assets/strings/strings_app.dart';
 import 'package:first_bootcamp/screens/squares/widgets/grid_body.dart';
 import 'package:first_bootcamp/theme/colors_app.dart';
+import 'package:first_bootcamp/theme/text_styles_app.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math; //TODO: move dependency
 
@@ -24,7 +25,10 @@ class _SquaresPageState extends State<SquaresPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(StringsApp.mainScreenTaskItemFirstText),
+        title: Text(
+          StringsApp.mainScreenTaskItemFirstText,
+          style: TextStylesApp.headerTextStyle.andColor(ColorsApp.black),
+        ),
         foregroundColor: ColorsApp.black,
         backgroundColor: ColorsApp.primeBlue,
       ),

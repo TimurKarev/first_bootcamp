@@ -1,4 +1,3 @@
-import 'package:first_bootcamp/screens/squares/squares_page.dart';
 import 'package:flutter/material.dart';
 
 class Square extends StatelessWidget {
