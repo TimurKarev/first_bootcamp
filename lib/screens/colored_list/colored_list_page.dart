@@ -12,6 +12,19 @@ class ColoredListPage extends StatefulWidget {
 }
 
 class _ColoredListPageState extends State<ColoredListPage> {
+  var _coloredList = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _updateList();
+  }
+
+  void _updateList() {
+    _coloredList.clear();
+    _coloredList = List<Color>.generate(1000, (_) => UtilsApp.getRandomColor());
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,15 +37,17 @@ class _ColoredListPageState extends State<ColoredListPage> {
           vertical: 9.0,
         ),
         child: ListView.builder(
-          itemCount: 1000,
+          itemCount: _coloredList.length,
           itemBuilder: (context, index) => ListTileApp(
-            color: UtilsApp.getRandomColor(),
+            color: _coloredList[index],
           ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          setState(() {});
+          setState(() {
+            _updateList();
+          });
         },
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16.0),
